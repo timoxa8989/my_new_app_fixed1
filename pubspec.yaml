@@ -1,0 +1,32 @@
+name: my_new_app_fixed  # Имя вашего проекта
+description: A new Flutter project for my app
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"  # Версия Dart SDK
+  flutter: ">=3.0.0"  # Версия Flutter
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.5.0  # Для работы с Firebase
+  firebase_messaging: ^14.2.1  # Для Push-уведомлений
+  image_picker: ^0.8.5+3  # Для работы с изображениями
+  http: ^0.13.3  # Для выполнения HTTP-запросов
+  provider: ^6.0.4  # Для управления состоянием
+  flutter_secure_storage: ^5.0.0  # Для безопасного хранения данных
+  shared_preferences: ^2.0.8  # Для хранения простых данных
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/  # Путь к изображениям или другим ресурсам
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700
